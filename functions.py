@@ -112,9 +112,11 @@ def output_rezults(rezults, student_data):
     if len(rezults["has"]) == 0:
         print(f'{student_data["full_name"]} не знает ни одного языка, необходимого для этой профессии.')
     else:
-        print(f'{student_data["full_name"]} знает {', '.join(rezults["has"])}')
+        rezult = ', '.join(rezults["has"])
+        print(f'{student_data["full_name"]} знает {rezult}')
 
     if len(rezults["lacks"]) == 0:
         print(f'{student_data["full_name"]} знает все языки, необходимые для этой профессии.')
     else:
-        print(f'{student_data["full_name"]} не знает {', '.join(rezults["lacks"])}')
+        rezult = ', '.join(rezults["lacks"])
+        print(f'{student_data["full_name"]} не знает {rezult}')
