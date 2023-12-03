@@ -38,6 +38,6 @@ def main():
     # Выводим результаты
     output_rezults(rezults, student_data)
 
-
+#lxcvjlxkc
 if __name__ == '__main__':
     main()
